@@ -1,0 +1,51 @@
+[{
+        "name": "Logo áo dài tết",
+        "price": "300000",
+        "photo": "/images/legoaodai1.jpg",
+        "link": "/zchitiet/viewlegoAoDai.html"
+    },
+
+    {
+        "name": "Logo cương thi",
+        "price": "300000",
+        "photo": "/images/legocuongthi1.jpg",
+        "link": "/zchitiet/viewlegoCuongThi.html"
+    },
+    {
+        "name": "Logo đá bóng",
+        "price": "300000",
+        "photo": "/images/legodabong1.jpg",
+        "link": ""
+    },
+    {
+        "name": "Logo Quân Nhân",
+        "price": "300000",
+        "photo": "/images/legoQuanNhan1.jpg",
+        "link": "/zchitiet/viewlegoQuanNhan.html"
+    },
+    {
+        "name": "Logo Noen",
+        "price": "300000",
+        "photo": "/images/legonoen1.jpg",
+        "link": ""
+    },
+    {
+        "name": "Logo Vet",
+        "price": "300000",
+        "photo": "/images/legovet1.jpg",
+        "link": "/zchitiet/viewlegoVet.html"
+    },
+    {
+        "name": "Logo áo dài tết",
+        "price": "300000",
+        "photo": "/images/legoaodai1.jpg",
+        "link": "/zchitiet/viewlegoAoDai.html"
+    },
+
+    {
+        "name": "Logo cương thi",
+        "price": "300000",
+        "photo": "/images/legocuongthi1.jpg",
+        "link": "/ASM/zchitiet/viewlegoCuongThi.html"
+    }
+]

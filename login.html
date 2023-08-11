@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/fontawesome-free-6.2.1-web/css/all.min.css">
+</head>
+
+<body ng-app="myapp">
+
+
+    <div class="container">
+        <!-- <div class="row"> -->
+        <header class="headerr">
+
+            <div class="row">
+                <div class="float-left ml-5 mt-1">
+                    <img src="/images/logoshop1.png" class="img-fluid" alt="...">
+                </div>
+                <div class="float-left col-6 mt-4 menuCenter">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
+                    <div class="tendm text-center mt-3">
+
+                        <a href="/index.html">TRANG CHỦ</a>
+                        <a href="">DANH MỤC SẢN PHẨM</a>
+                        <a href="">THÔNG BÁO</a>
+                    </div>
+                </div>
+                <div class="float-left dtGioHang ml-3">
+                    <i class="fas fa-phone nav-link "><a href=""> 0388966394</a></i>
+                    <li class="float-right mt-1"><a href="" class=""> Giỏ hàng</a><i class="fas fa-shopping-cart"> </i>
+                    </li>
+                    <li class="text-center mt-2">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        <a href=""> Đăng nhập</a>
+                    </li>
+                </div>
+            </div>
+        </header>
+        <!-- </div> -->
+        <div class="row">
+            <div class="col-12">
+                <form action="" name="formlogin">
+                    <div class="row mt-5">
+                        <div class="form-group col-6">
+                            <div class="row mt-4">
+                                <div class=""></div>
+                                <div class="text-center">
+                                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                        </ol>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active" data-interval="2000">
+                                                <img src="/images/dau.jpg" class="d-block w-100 img-fluid" alt="...">
+                                            </div>
+                                            <div class="carousel-item" data-interval="2000">
+                                                <img src="/images/mohinh73.jpg" class="d-block w-100 img-fluid" alt="...">
+                                            </div>
+                                            <div class="carousel-item" data-interval="2000">
+                                                <img src="/images/xedieukienden2.jpg" class="d-block w-100 img-fluid" alt="...">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Previous</span>
+                                </button>
+                                        <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Next</span>
+                                </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-4 ml-5">
+                            <!-- <div class="form-group"> -->
+                            <label for="email"></label>
+                            <input type="email" ng-model="email" required class="form-control" name="email" aria-describedby="emailhelpId" placeholder="Email">
+                            <small ng-show="formlogin.email.$invalid" id="emailhelpId" class="form-text text-danger">Email không hợp lệ</small>
+                            <!-- </div> -->
+                            <label for="password"></label>
+                            <input type="password" ng-model="password" required class="form-control" name="password" aria-describedby="passwordhelpId" placeholder="password">
+                            <small ng-show="formlogin.password.$invalid" id="passwordhelpId" class="text-danger form-text">Vui lòng nhập password!</small>
+                            <button type="submit" class="btn btn-info mt-4 col-12">
+                                <i class="fas fa-right-to-bracket"></i> Đăng Nhập</button>
+                            <div class="row">
+                                <div class="col-12">
+
+                                    <small class="form-text text-muted"><a href="">Quên mật khẩu</a><a href=""
+                                            class="float-right">Đăng nhập bằng SMS</a></small>
+
+
+
+
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-secondary mt-4" style="width: 170px;">
+                                <i class="fa-brands fa-google"></i> Google</button>
+                            <button type="submit" class="btn btn-primary mt-4 float-right " style="width: 170px;">
+                                <i class="fa-brands fa-facebook"></i> Facebook</button>
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-success mt-4 " style="width: 170px;">
+                                        <i class=""></i> Đăng ký</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                </form>
+            </div>
+        </div>
+        <hr width="1140" size="5" class="row">
+        <footer class="row mt-3">
+            <div class="col-3 ml-3 mt-4 mb-4">
+                <h5>Về chúng tôi</h5>
+                <p class="mr-0">
+                    Websibe chính thức của yenlinhtoys. Hiện tại mình chỉ nhận đơn hàng trên websibe chứ không nhận bất cứ bên nào hết nhé!
+                </p>
+            </div>
+            <div class="col-3 mt-4">
+                <h5>Thông tin</h5>
+                <li class="mt-3"><a href="">Giới thiệu</a></li>
+                <li><a href="">Chính sách bảo mật</a></li>
+                <li><a href="">Điều khoản</a></li>
+
+            </div>
+            <div class="col-3 mt-4">
+                <h5>Danh sách sản phẩm</h5>
+                <li><a href="">Lego</a></li>
+                <li><a href="">Mô hình</a></li>
+                <li><a href="">Robot</a></li>
+                <li><a href="" class="card-link">Xe điều khiển</a></li>
+                <li><a href="">Búp bê</a></li>
+            </div>
+            <div class="col-md-2 mt-4">
+                <h5>Hổ trợ</h5>
+                <p>Mọi góp ý hổ trợ vui lòng liên hệ Fanpage và Intagram</p>
+                <li><i class="fa-brands fa-square-facebook"></i>
+                    <a href="">Facebook</a>
+                </li>
+                <li><i class="fa-brands fa-square-instagram"></i>
+                    <a href="">Intagram</a>
+                </li>
+            </div>
+        </footer>
+        <div class="card-footer row">
+            <p>FPT polytechnic &copy 2023, All right reverved.</p>
+        </div>
+    </div>
+    <!-- <script src="/dist/js/bootstrap.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <script src="dist/js/angular.min.js"></script>
+    <script>
+        var app = angular.module('myapp', []);
+    </script>
+    <script src="/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

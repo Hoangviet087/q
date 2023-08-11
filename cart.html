@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="fontawesome-free-6.2.1-web/css/all.min.css">
+    <link rel="stylesheet" href="/css/index.css">
+
+    <body ng-app="myApp" ng-controller="cartCtrl" style="background-color: white;">
+        <div class="container">
+
+
+            <div class=" ">
+
+                <header class="headerr">
+
+                    <div class="row">
+                        <div class="float-left mt-1" style="margin-left: 65px;">
+                            <img src="/images/logoshop1.png" class="img-fluid" alt="...">
+                        </div>
+                        <div class="float-left col-6 mt-4 menuCenter">
+                            <!-- <input class="form-control mr-sm-2 search" type="text" ng-model="searchTerm" placeholder="Tìm kiếm" aria-label="Search"> -->
+                            <div class="tendm text-center mt-3">
+
+                                <a href="/index.html">TRANG CHỦ</a>
+
+                                <a class="nav-item dropdown" href="#" role="button" data-toggle="dropdown" aria-expanded="false">DANH MỤC SẢN PHẨM</a>
+
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Lego</a>
+                                    <a class="dropdown-item" href="#">Mô hình</a>
+                                    <a class="dropdown-item" href="#">Xe điều khiển</a>
+                                    <a class="dropdown-item" href="#">Rubit</a>
+                                    <a class="dropdown-item" href="#">Búp bê</a>
+
+                                </div>
+
+                                <a href="" data-toggle="modal" data-target="#exampleModal">THÔNG BÁO</a>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <!-- <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Nhập Lương Tháng 12</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                    </div> -->
+                                    <div class="modal-body">
+
+                                        <p>Yenlinhtoys xin thông báo hiện Shop KHÔNG có chương trình tri ân khách hàng nào bằng việc tặng nước hoa, quà, hoặc một vài sản phầm khác như một số bạn đã nhận được thông tin. Các bạn lưu ý tránh để kẻ gian trục
+                                            lợi làm ảnh hưởng uy tín của Shop nhé ạ Số điện thoại check đơn của nhân viên Yenlinhtoys lần lượt ở dưới đây. Các bạn vui lòng kiểm tra tin nhắn hoặc cuộc gọi check thông tin đơn hàng có khớp với các số này
+                                            hay không nhé </p>
+                                        <p class="text-danger ">Chi tiết xin liên hệ Hotline: 0822221992/0388966394</p>
+                                        <p>Bạn nào có tin nhắn hoặc cuộc gọi về việc nhận được quà tặng từ chương trình tri ân khách hàng vui lòng comment vào bài đăng inbox hoặc gọi trực tiếp vào. hotline giúp chúng mình. CÓ MỘT YÊU CẦU NHỎ TRONG LẦN NÀY,
+                                            CÁC BẠN QUAY LẠI VIDEO BÓC KIỆN HÀNG GIÚP SHOP. TRONG TRƯỜNG HỢP ĐỒI TRẢ (ĐỐI VỚI SẢN PHẨM LÀ ÁO, YÊU CẦU PHẢI CÒN NGUYÊN TAG MAC), NHẬN THIẾU HÀNG, CÁC BẠN GỬI LẠI VIDEO ĐÓ VÀ INBOX PAGE Yenlinhtoys ĐỂ ĐƯỢC
+                                            HỖ TRỢ NHANH HẾT SỨC CÓ THỂ Ạ.</p>
+                                        <p>Nếu có bất kì thắc mắc vui lòng inbox fanpage Yenlinhtoys đề được giải đáp. Xin chân thành cám ơn và yêu thương rất nhiều Hiện tại bên shop CHƯA có bất cứ chương trình tri ân nào. Nếu có ưu đãi cũng sẽ được thông
+                                            báo công khai trên các kênh <span class="badge badge-danger">CHÍNH THỨC VÀ DUY NHẤT</span> sau đây: </p>`
+                                        <p>Website : https://Shop.Yenlinhtoys.com/</p>
+                                        <p>Fanpage : https:/www.facebook.com/Yenlinhtoys-]82674912585855/</p>
+                                        <p>Instagram : https:/Wwww.instagram.com/Yenlinhtoys.shop/ </p>
+                                        <p>Email : Yenlinhtoys@gmail.com Yenlinhtoys xin vui lòng được phục vụ quý khách!</p>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                                        <!-- <button type="button" class="btn btn-primary">Lưu</button> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="float-left dtGioHang ml-3">
+                            <i class="fas fa-phone nav-link "><a href=""> 0388966394</a></i>
+                            <li class="float-right mt-1"><a href="/cart.html" class=""> Giỏ hàng</a><i class="fas fa-shopping-cart"> </i>
+                            </li>
+                            <li class="text-center mt-2">
+                                <i class="fa-solid fa-right-to-bracket"></i>
+                                <a href="/login.html"> Đăng nhập</a>
+                            </li>
+                        </div>
+                    </div>
+                </header>
+            </div>
+
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-8">
+                        <section class="me-5 ms-5 mt-5" style="min-height: 500px;">
+                            <div class="row">
+
+                                <h3>Your Cart</h3>
+                                <hr>
+
+                                <table class="table mt-4">
+                                    <thead>
+                                        <th>Sản Phẩm</th>
+                                        <th>Giá</th>
+                                        <th>Số Lượng</th>
+                                        <th>Xóa</th>
+
+                                    </thead>
+                                    <tbody class="align-middle">
+
+                                        <tr ng-repeat="item in cartItems">
+                                            <td><img style="width: 70px;" src="{{item.photo}}" alt=""> {{item.name}}</td>
+                                            <td><span class="me-3 text-decoration-line-through text-muted">{{item.sale}}
+                                 <span class="text-decoration-underline"> </span>
+                                                </span>
+                                                <span style="color: #be1e2d;">{{item.price}}
+                                    <span class="text-decoration-underline"> đ</span></span>
+                                            </td>
+                                            <td> <button class="btn border-secondary " ng-click="decrementItem(item)">-</button> {{item.quantity}}
+                                                <button class="btn border-secondary" ng-click="incrementItem(item)">+</button>
+                                            </td>
+                                            <td><button class="btn btn-outline-danger " ng-click="removeItem(item)">Xóa </button></td>
+                                        </tr>
+
+                                    </tbody>
+
+                                </table>
+                                <div>Tổng thanh toán: <strong>{{getTotal()}}</strong><span class="text-decoration-underline"> đ</span></span>
+
+                                </div>
+
+
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-md-4 mt-5">
+                        <div class="fw-bold fs-4">
+                            <h3>Người mua/nhận hàng</h3>
+                        </div>
+                        <form name="FormCart" class="form-group">
+                            <div class="mb-3">
+                                <label for="fullname" class="mb-2"> Tên </label>
+                                <input type="text" required ng-model="fullname" maxlength="50" class="form-control" name="fullname" id="fullname" aria-describedby="fullnamehelpId" placeholder="Tên người nhận">
+                                <small id="fullnamehelpId" ng-show="FormCart.fullname.$invalid" class="form-text text-danger">
+                                    Vui lòng nhập Họ tên!</small>
+                            </div>
+                            <div class="mb-3">
+                                <label class="mb-2"> Điện thoại liên lạc </label>
+                                <input type="phone" ng-model="phone" required class="form-control" name="phone" id="phone" aria-describedby="phonehelpId" placeholder=" Số điện thoại">
+                                <small ng-show="FormCart.phone.$invalid" id="phonehelpId" class="form-text text-danger">Số điện thoại không hợp lệ</small>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="">Địa chỉ</label>
+                                <input class="form-control" placeholder="Địa chỉ nhận hàng" />
+                            </div>
+                            <div class="mb-3">
+
+                                <label>Ghi chú:</label>
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <button class="btn w-100 text-white" style="background-color: rgb(88, 166, 166);">ĐẶT HÀNG</button>
+                            </div>
+                            <hr class="mb-3">
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+        <footer class="row mt-3 col-12">
+            <div class="col-3 ml-3 mt-4 mb-4">
+                <h5>Về chúng tôi</h5>
+                <p class="mr-0">
+                    Websibe chính thức của yenlinhtoys. Hiện tại mình chỉ nhận đơn hàng trên websibe chứ không nhận bất cứ bên nào hết nhé!
+                </p>
+            </div>
+            <div class="col-3 mt-4">
+                <h5>Thông tin</h5>
+                <li class="mt-3"><a href="">Giới thiệu</a></li>
+                <li><a href="">Chính sách bảo mật</a></li>
+                <li><a href="">Điều khoản</a></li>
+
+            </div>
+            <div class="col-3 mt-4">
+                <h5>Danh sách sản phẩm</h5>
+                <li><a href="">Lego</a></li>
+                <li><a href="">Mô hình</a></li>
+                <li><a href="">Robot</a></li>
+                <li><a href="" class="card-link">Xe điều khiển</a></li>
+                <li><a href="">Búp bê</a></li>
+            </div>
+            <div class="col-2 mt-4">
+                <h5>Hổ trợ</h5>
+                <p>Mọi góp ý hổ trợ vui lòng liên hệ Fanpage và Intagram</p>
+                <li><i class="fa-brands fa-square-facebook"></i>
+                    <a href="">Facebook</a>
+                </li>
+                <li><i class="fa-brands fa-square-instagram"></i>
+                    <a href="">Intagram</a>
+                </li>
+            </div>
+        </footer>
+        </div>
+        <script src="/dist/js/angular.min.js"></script>
+        <!-- <script src="js/angular-route.min.js"></script> -->
+        <script src="/js/cart.js"></script>
+
+    </body>
+
+
+</html>

@@ -1,0 +1,17 @@
+<article>
+    <div class="row g-4 mt-3">
+        <div ng-app="myApp" ng-repeat="product in products | filter:searchTerm" class="col-12 col-sm-0 col-md-3 text-center">
+            <a style="text-decoration: none; color: black;" href="{{product.link}}">
+                <div class="card mb-3 mt-4">
+                    <div class="card-body ">
+                        <img src="{{product.photo}}" alt="" class="img-fluid">
+                    </div>
+                    <div class="card-footer ">
+                        <b style="font-size: 25px;">{{product.name}}</b> <br> <b ng-bind="product.price | currency:'Đ '" class="text-danger">{{product.price}} </b><br>
+                        <a href=""><button type="button" class="btn btn-outline-success mt-3" ng-click=" addToCart(product)">MUA NGAY</button></a>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</article>

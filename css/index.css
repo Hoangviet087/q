@@ -1,0 +1,47 @@
+div {
+    display: block;
+}
+
+li {
+    list-style: none;
+}
+
+.menuCenter {
+    margin-left: 80px;
+}
+
+.tendm>a {
+    margin: 4px;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(20, 20, 20);
+}
+
+.dtGioHang {
+    margin-top: 33px;
+}
+
+.dtGioHang>i>a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: 550;
+}
+
+.dtGioHang>li>a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: 550;
+}
+
+.carousel-inner {
+    height: 400px;
+}
+
+.productsbanchay>img {
+    width: 320px;
+    height: 300px;
+}
+
+footer {
+    background-color: #F7F7F7;
+}
